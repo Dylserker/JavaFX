@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
 
+<VBox spacing="10" style="-fx-padding: 20px; -fx-alignment: center;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="Exo.Exo6">
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <ComboBox fx:id="comboBoxVilles" editable="true" layoutX="464.0" layoutY="381.0" prefWidth="150.0" promptText="Choisir une ville" />
-      <Label fx:id="labelSelection" text="Sélectionnez une ville" />
-   </children>
-</Pane>
+   <TableView fx:id="tableView" prefHeight="300" prefWidth="400">
+      <columns>
+         <TableColumn fx:id="colNom" prefWidth="120" text="Nom" />
+         <TableColumn fx:id="colPrenom" prefWidth="120" text="Prénom" />
+         <TableColumn fx:id="colAge" prefWidth="60" text="Âge" />
+      </columns>
+   </TableView>
+
+   <TextField fx:id="textFieldNom" promptText="Nom" />
+   <TextField fx:id="textFieldPrenom" promptText="Prénom" />
+   <TextField fx:id="textFieldAge" promptText="Âge" />
+
+   <Button onAction="#ajouterPersonne" text="Ajouter" />
+   <Button onAction="#supprimerPersonne" text="Supprimer" />
+</VBox>
