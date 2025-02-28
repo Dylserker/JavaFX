@@ -1,10 +1,12 @@
+package Exo;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Exo1 extends Application {
     @Override
     public void start(Stage primaryStage) {
         Button button = new Button("Clique-moi !");
