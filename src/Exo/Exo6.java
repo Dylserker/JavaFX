@@ -116,6 +116,7 @@ public class Exo6 extends Application {
 
     @FXML
     private void ajouterPersonne() {
+
         String nom = textFieldNom.getText();
         String prenom = textFieldPrenom.getText();
         int age = Integer.parseInt(textFieldAge.getText());

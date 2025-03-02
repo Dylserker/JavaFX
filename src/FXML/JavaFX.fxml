@@ -6,13 +6,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="10" style="-fx-padding: 20px; -fx-alignment: center;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="Exo.Exo6">
+<VBox spacing="10" style="-fx-padding: 20px; -fx-alignment: center;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exo.Exo6">
 
    <TableView fx:id="tableView" prefHeight="300" prefWidth="400">
       <columns>
-         <TableColumn fx:id="colNom" prefWidth="120" text="Nom" />
-         <TableColumn fx:id="colPrenom" prefWidth="120" text="Prénom" />
-         <TableColumn fx:id="colAge" prefWidth="60" text="Âge" />
+         <TableColumn fx:id="colNom" prefWidth="136.0" text="Nom" />
+         <TableColumn fx:id="colPrenom" prefWidth="180.0" text="Prénom" />
+         <TableColumn fx:id="colAge" prefWidth="83.0" text="Âge" />
       </columns>
    </TableView>
 
