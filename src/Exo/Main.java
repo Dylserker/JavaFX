@@ -8,6 +8,7 @@ public class Main {
         //Exo3.main(args);
         //Exo4.main(args);
         //Exo5.main(args);
-        Exo6.main(args);
+        //Exo6.main(args);
+        Exo7.main(args);
     }
 }

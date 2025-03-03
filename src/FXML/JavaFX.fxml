@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
 
-<VBox spacing="10" style="-fx-padding: 20px; -fx-alignment: center;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exo.Exo6">
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exo.Exo7" spacing="10" style="-fx-padding: 20px; -fx-alignment: center;">
 
-   <TableView fx:id="tableView" prefHeight="300" prefWidth="400">
-      <columns>
-         <TableColumn fx:id="colNom" prefWidth="136.0" text="Nom" />
-         <TableColumn fx:id="colPrenom" prefWidth="180.0" text="Prénom" />
-         <TableColumn fx:id="colAge" prefWidth="83.0" text="Âge" />
-      </columns>
-   </TableView>
+   <ListView fx:id="listView" prefHeight="150" onMouseClicked="#onImageSelected" />
 
-   <TextField fx:id="textFieldNom" promptText="Nom" />
-   <TextField fx:id="textFieldPrenom" promptText="Prénom" />
-   <TextField fx:id="textFieldAge" promptText="Âge" />
+   <Pane fx:id="dropPane" prefHeight="150" style="-fx-border-color: black; -fx-background-color: #f0f0f0;"
+         onDragOver="#onDragOver" onDragDropped="#onDragDropped">
+      <ImageView fx:id="imageView" fitWidth="300" fitHeight="200" preserveRatio="true" />
+   </Pane>
 
-   <Button onAction="#ajouterPersonne" text="Ajouter" />
-   <Button onAction="#supprimerPersonne" text="Supprimer" />
 </VBox>
