@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-
-<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="Exo.Exo8">
-
-   <VBox spacing="10" alignment="CENTER">
-      <Button text="Ouvrir la fenêtre" onAction="#openModal"/>
-   </VBox>
-
-   <VBox fx:id="modalPane" spacing="10" alignment="CENTER"
-         style="-fx-background-color: rgba(0,0,0,0.5); -fx-padding: 20px; -fx-border-radius: 10px;"
-         visible="false">
-      <Label text="Ceci est une fenêtre modale"/>
-      <Button text="Fermer" onAction="#closeModal"/>
-   </VBox>
-
-</StackPane>
-
+<VBox spacing="10" alignment="center" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Exo.Exo9">
+   <ProgressBar fx:id="progressBar" prefWidth="300"/>
+   <Button text="Charger" onAction="#onChargeClick"/>
+   <Button text="Télécharger" onAction="#onDownloadClick"/>
+</VBox>
