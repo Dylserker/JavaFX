@@ -2,8 +2,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" alignment="center" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Exo.Exo9">
-   <ProgressBar fx:id="progressBar" prefWidth="300"/>
-   <Button text="Charger" onAction="#onChargeClick"/>
-   <Button text="Télécharger" onAction="#onDownloadClick"/>
-</VBox>
+<TabPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Exo.Exo10">
+   <tabs>
+      <Tab text="Accueil">
+         <AnchorPane>
+            <Label text="Bienvenue sur l'Accueil !" layoutX="100" layoutY="100"/>
+            <Button text="Cliquez ici pour plus d'infos" layoutX="100" layoutY="150" onAction="#onAccueilClick"/>
+         </AnchorPane>
+      </Tab>
+
+      <Tab text="Profil">
+         <AnchorPane>
+            <Label text="Nom: John Doe" layoutX="100" layoutY="100"/>
+            <Label text="Âge: 30" layoutX="100" layoutY="150"/>
+            <Button text="Mettre à jour Profil" layoutX="100" layoutY="200" onAction="#onProfilClick"/>
+         </AnchorPane>
+      </Tab>
+
+      <Tab text="Paramètres">
+         <AnchorPane>
+            <Label text="Paramètre 1" layoutX="100" layoutY="100"/>
+            <Label text="Paramètre 2" layoutX="100" layoutY="150"/>
+            <Button text="Modifier Paramètres" layoutX="100" layoutY="200" onAction="#onParametresClick"/>
+         </AnchorPane>
+      </Tab>
+   </tabs>
+</TabPane>
